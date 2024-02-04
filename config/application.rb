@@ -20,3 +20,7 @@ module Blog
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+production:
+  secret_key_base: <%= Rails.application.credentials.production[:secret_key_base] %>
+
